@@ -374,7 +374,306 @@ line-height:1.4;
 .ultraItem:hover{
 transform:scale(1.2);
 }
+/* =========================
+FLOAT MINI BEAD
+========================= */
 
+#miniBeadFloat{
+
+position:fixed;
+
+top:18px;
+left:18px;
+
+width:265px;
+
+background:rgba(20,20,35,.96);
+
+border:2px solid #ff2ea6;
+
+border-radius:14px;
+
+padding:10px;
+
+z-index:99999;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 0 20px rgba(255,0,180,.45);
+
+user-select:none;
+
+cursor:move;
+
+}
+
+#miniBeadHeader{
+
+font-size:15px;
+
+font-weight:bold;
+
+text-align:center;
+
+margin-bottom:8px;
+
+color:#fff;
+
+}
+
+#miniBead{
+
+background:#fff;
+
+border-radius:8px;
+
+display:block;
+
+margin:auto;
+
+}
+
+.miniStat{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:8px;
+
+font-size:13px;
+
+}
+
+
+/* =========================
+FLOAT CONTROL
+========================= */
+
+#miniControlFloat{
+
+position:fixed;
+
+left:18px;
+
+top:250px;
+
+width:265px;
+
+background:rgba(20,20,35,.96);
+
+border:2px solid #00d8ff;
+
+border-radius:14px;
+
+padding:10px;
+
+z-index:99999;
+
+cursor:move;
+
+user-select:none;
+
+box-shadow:0 0 20px rgba(0,180,255,.35);
+
+}
+
+#miniControlHeader{
+
+text-align:center;
+
+font-weight:bold;
+
+margin-bottom:10px;
+
+}
+
+.miniButtons{
+
+display:grid;
+
+grid-template-columns:repeat(5,1fr);
+
+gap:6px;
+
+}
+
+.miniButtons button{
+
+padding:8px 0;
+
+font-size:13px;
+
+}
+/* =========================
+   FLOATING MINI BEAD
+========================= */
+
+#miniBeadFloat{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:99999;
+
+    width:300px;
+
+    background:#111;
+    border:2px solid #00e5ff;
+    border-radius:16px;
+
+    box-shadow:0 0 25px rgba(0,229,255,.45);
+    overflow:hidden;
+}
+
+#miniBeadHeader{
+    padding:10px;
+    background:#00bcd4;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    cursor:move;
+    user-select:none;
+}
+
+#miniControlFloat{
+    position:fixed;
+
+    top:225px;          /* ต่อจาก Mini Bead */
+    left:20px;
+
+    z-index:99999;
+
+    width:190px;        /* เท่ากล่อง Mini Bead */
+
+    background:#111;
+    border:2px solid #ffd54f;
+    border-radius:10px;
+
+    box-shadow:0 0 18px rgba(255,213,79,.35);
+    overflow:hidden;
+}
+
+#miniControlHeader{
+    padding:6px 0;
+    background:#ff9800;
+    color:#fff;
+    font-weight:700;
+    font-size:10px;
+    letter-spacing:.8px;
+    text-align:center;
+    cursor:move;
+    user-select:none;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+#miniControlFloat .btnGroup{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:4px;
+    padding:6px;
+}
+#miniControlFloat button{
+    height:30px;
+    border:none;
+    border-radius:6px;
+    font-size:10px;
+    font-weight:700;
+    cursor:pointer;
+    padding:0;
+    line-height:30px;
+    transition:.2s;
+}
+#miniControlFloat button:hover{
+    transform:scale(1.03);
+}
+#miniControlFloat .btnUndo,
+#miniControlFloat .btnClear{
+    grid-column:span 3;
+}
+#miniBeadFloat{
+    width:190px;
+    padding:6px;
+    border-radius:10px;
+}
+
+#miniBeadHeader{
+    font-size:12px;
+    padding:4px;
+    font-weight:bold;
+    text-align:center;
+}
+
+#miniBead{
+    width:170px;
+    height:130px;
+    display:block;
+    margin:auto;
+}
+
+.mini-stat{
+    font-size:10px;
+    display:flex;
+    justify-content:space-between;
+    margin:4px 0;
+}
+
+.mini-stat span{
+    font-size:10px;
+}
+.loginPage .btnGroup{
+    display:flex;
+    gap:4px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.loginPage .btnGroup button{
+    font-size:11px;
+    padding:4px 8px;
+    min-width:60px;
+    height:28px;
+    border-radius:6px;
+}
+.header{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+    min-height:70px;
+}
+
+.title{
+    width:100%;
+    text-align:center;
+    line-height:1.3;
+}
+
+.title h1{
+    margin:0;
+    font-size:34px;
+    font-weight:900;
+    letter-spacing:1px;
+    color:#fff;
+    text-shadow:
+        0 0 8px #ff4fd8,
+        0 0 18px rgba(255,0,180,.45);
+}
+
+#expireText{
+    margin-top:6px;
+    font-size:12px;
+    color:#ffd7ff;
+    opacity:.85;
+    font-weight:500;
+}
+
+.lastResultBox{
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:18px;
+}
 </style>
 </head>
 
@@ -406,11 +705,21 @@ transform:scale(1.2);
 <div class="card">
 <div class="header">
 
-<div class="title">
-Baccarat Killer V.Ai 9 ชั้น
-<div id="expireText" style="font-size:14px;">
-วันหมดอายุ : 9 สิงหาคม พ.ศ. 2569
-</div>
+    <div class="title">
+
+        <h1>Baccarat Killer V.Ai 9 ชั้น</h1>
+
+        <div id="expireText">
+            วันหมดอายุ : 9 สิงหาคม พ.ศ. 2569
+        </div>
+
+    </div>
+
+    <div class="lastResultBox">
+        ผลล่าสุด :
+        <span id="lastResult">-</span>
+    </div>
+
 </div>
 
 <div>
@@ -533,8 +842,64 @@ Confidence 0%
 
 </div> <!-- ปิด row -->
 
-<script>
+<!-- =========================
+FLOAT MINI BEAD
+========================= -->
 
+<div id="miniBeadFloat" style="display:none;">
+
+    <div id="miniBeadHeader">
+        MINI BEAD ROAD
+    </div>
+
+    <div class="mini-stat">
+        <span>P : <b id="miniP">0</b></span>
+        <span>B : <b id="miniB">0</b></span>
+        <span>T : <b id="miniT">0</b></span>
+        <span>Total : <b id="miniTotal">0</b></span>
+    </div>
+
+ <canvas
+    id="miniBead"
+    width="170"
+    height="130">
+</canvas>
+
+</div>
+
+<!-- วางตรงนี้ -->
+<div id="miniControlFloat" style="display:none;">
+
+    <div id="miniControlHeader">
+        CONTROL
+    </div>
+
+    <div class="btnGroup">
+
+        <button class="btnP" onclick="addResult('P')">
+            PLAYER
+        </button>
+
+        <button class="btnB" onclick="addResult('B')">
+            BANKER
+        </button>
+
+        <button class="btnT" onclick="addResult('T')">
+            TIE
+        </button>
+
+        <button class="btnUndo" onclick="undo()">
+            UNDO
+        </button>
+
+        <button class="btnClear" onclick="clearBoard()">
+            CLEAR
+        </button>
+
+    </div>
+
+</div>
+<script>
 const roadmap = document.getElementById("roadmap")
 
 const cols = 14
@@ -676,8 +1041,13 @@ if(type !== "T" && prevFinal){
 
 // render
 drawBead()
+
+drawMiniBead()
+
 updateStats()
+
 renderHistory()
+
 renderUltraAI()
 
 document.getElementById("lastResult").textContent = type
@@ -754,7 +1124,53 @@ function drawBead(){
 
 }
 /* เพิ่มฟังก์ชันนี้ */
+function drawMiniBead(){
 
+const canvas=document.getElementById("miniBead");
+
+if(!canvas) return;
+
+const ctx=canvas.getContext("2d");
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+const size=12;
+
+results.forEach((r,i)=>{
+
+let row=i%6;
+
+let col=Math.floor(i/6);
+
+let x=col*size+8;
+let y=row*size+8;
+
+ctx.beginPath();
+
+ctx.arc(x,y,5,0,Math.PI*2);
+
+ctx.fillStyle=
+r=="P"?"#1976ff":
+r=="B"?"#ff3030":
+"#11aa22";
+
+ctx.fill();
+
+});
+
+document.getElementById("miniP").innerHTML=
+results.filter(x=>x=="P").length;
+
+document.getElementById("miniB").innerHTML=
+results.filter(x=>x=="B").length;
+
+document.getElementById("miniT").innerHTML=
+results.filter(x=>x=="T").length;
+
+document.getElementById("miniTotal").innerHTML=
+results.length;
+
+}
 function updateStats(){
 
 let B = results.filter(r=>r==="B").length
@@ -793,10 +1209,13 @@ function clearBoard(){
   c.className="cell";
  });
 
- updateStats();
- renderHistory();
+updateStats();
 
- document.getElementById("lastResult").textContent="-";
+drawMiniBead();
+
+renderHistory();
+
+document.getElementById("lastResult").textContent="-";
 
  // 🔥 รีเซ็ตกล่อง AI 7 ชั้น
 document.getElementById("aiUltraBox").innerHTML = ""
@@ -896,8 +1315,13 @@ temp.forEach(r=>{
 isReplay = false
 
 drawBead()
+
+drawMiniBead()
+
 updateStats()
+
 renderHistory()
+
 renderUltraAI()
 }
 
@@ -1539,6 +1963,58 @@ histBox.appendChild(d);
 });
 
 }
+function enableDrag(box,header){
+
+let x=0,y=0;
+let dx=0,dy=0;
+
+header.onmousedown=dragStart;
+
+function dragStart(e){
+
+e.preventDefault();
+
+dx=e.clientX;
+dy=e.clientY;
+
+document.onmouseup=stopDrag;
+document.onmousemove=drag;
+
+}
+
+function drag(e){
+
+e.preventDefault();
+
+x=dx-e.clientX;
+y=dy-e.clientY;
+
+dx=e.clientX;
+dy=e.clientY;
+
+box.style.top=(box.offsetTop-y)+"px";
+box.style.left=(box.offsetLeft-x)+"px";
+
+}
+
+function stopDrag(){
+
+document.onmouseup=null;
+document.onmousemove=null;
+
+}
+
+}
+
+enableDrag(
+document.getElementById("miniBeadFloat"),
+document.getElementById("miniBeadHeader")
+);
+
+enableDrag(
+document.getElementById("miniControlFloat"),
+document.getElementById("miniControlHeader")
+);
 /* =========================
 LOGIN SYSTEM
 ========================= */
@@ -1555,8 +2031,12 @@ const PASSWORD = "1234"
 
 if(user === USERNAME && pass === PASSWORD){
 
-document.getElementById("loginPage").style.display = "none"
-document.querySelector(".container").style.display = "block"
+    document.getElementById("loginPage").style.display = "none";
+    document.querySelector(".container").style.display = "block";
+
+    // แสดง Mini หลัง Login
+    document.getElementById("miniBeadFloat").style.display = "block";
+    document.getElementById("miniControlFloat").style.display = "block";
 
 }else{
 
